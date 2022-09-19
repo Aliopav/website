@@ -173,6 +173,7 @@ input[name="r"] {
 }
 h1 {
   text-align: center;
+  font-size: 25px;
 }
 .circle {
   width: 200px;
