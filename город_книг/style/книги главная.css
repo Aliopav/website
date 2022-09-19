@@ -209,7 +209,7 @@ h1 {
 
 .category div {
   width: 20%;
-  height: 25vw;
+  height: 15vw;
   background-color: rgba(128, 128, 128, 0.449);
   margin-top: 20px;
   border: 1px solid;
@@ -290,7 +290,7 @@ footer {
   }
   .category div {
     width: 40vw;
-    height: 35vw;
+    height: 42vw;
   }
   .menu {
     display: none;
