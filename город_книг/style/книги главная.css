@@ -209,7 +209,7 @@ h1 {
 
 .category div {
   width: 20%;
-  height: 15vw;
+  height: 25vw;
   background-color: rgba(128, 128, 128, 0.449);
   margin-top: 20px;
   border: 1px solid;
@@ -316,6 +316,9 @@ footer {
     height: 73vw;
     left: 0;
     transform: translateX(-35%);
+  }
+  .category a img {
+    top: 20;
   }
   .footer_flex {
     flex-direction: column;
