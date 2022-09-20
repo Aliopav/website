@@ -1,6 +1,14 @@
 * {
   margin: 0;
 }
+@font-face {
+  font-family: Bukhari;
+  src: url(fonts/BukhariScript-Regular.otf);
+}
+@font-face {
+  font-family: Balqis;
+  src: url(fonts/Balqis.otf);
+}
 body {
   background-image: url(image/фон\ город\ в\ облаках.jpg);
   background-repeat: no-repeat;
@@ -16,9 +24,11 @@ header {
   position: relative;
   right: 0;
 }
+
 .contact {
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 .seach img {
   height: 50px;
@@ -31,9 +41,28 @@ header {
   width: 250px;
 }
 .name {
-  margin-top: 40px;
+  height: 100px;
+  margin-top: 0px;
   font-size: 20px;
+}
+
+.name a {
+  width: 200px;
   position: absolute;
+  text-decoration: none;
+  /* color: rgb(79, 66, 48); */
+  color: #ffd700;
+  top: 30px;
+  font-family: Bukhari, Balqis;
+  font-size: 35px;
+  /* border: 2px solid rgb(79, 66, 48); */
+  border: 2px solid #ffd700;
+}
+.basket img {
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 nav {
   background-color: rgba(128, 128, 128, 0.523);
@@ -100,7 +129,7 @@ nav > div:hover .submenu {
   border: 1px solid;
   width: 60vw;
   height: 30vw;
-  background-color: white;
+  background-color: grey;
   position: absolute;
   top: 60px;
   left: 50%;
@@ -216,7 +245,6 @@ h1 {
   height: 15vw;
   background-color: rgba(128, 128, 128, 0.449);
   margin-top: 20px;
-  border: 1px solid;
   border-radius: 10px;
   position: relative;
 }
@@ -300,6 +328,7 @@ footer {
     bottom: 0;
   }
   .name {
+    position: absolute;
     left: 50%;
     top: 0;
     transform: translate(-50%);
