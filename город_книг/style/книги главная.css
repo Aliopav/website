@@ -50,15 +50,15 @@ header {
 }
 
 .name a {
+  left: 50%;
+  transform: translateX(-50%);
   width: 190px;
   position: absolute;
   text-decoration: none;
-  /* color: rgb(79, 66, 48); */
   color: #ffd700;
   top: 30px;
   font-family: Bukhari, Balqis;
   font-size: 35px;
-  /* border: 2px solid rgb(79, 66, 48); */
   border: 2px solid #ffd700;
 }
 .basket img {
@@ -413,15 +413,10 @@ footer {
     top: 20px;
     transform: translate(-50%);
   }
-  .basket {
-    display: none;
-  }
+
   .contact {
     position: absolute;
     left: 0;
-  }
-  .registration {
-    display: none;
   }
 
   .category {
@@ -441,22 +436,27 @@ footer {
   }
 }
 @media (max-width: 650px) {
-  header {
+  .name {
+    top: 0px;
+  }
+  .contact {
+    display: none;
   }
   nav {
     margin-left: 0;
     margin-right: 0;
     margin-top: 10px;
   }
-  .registration {
-    display: none;
+  .registration img {
+    right: 10px;
+    top: 55px;
   }
 
   .advantages {
     display: none;
   }
   .slider {
-    width: 100%;
+    width: 90%;
     height: 20%;
   }
   h1 {
