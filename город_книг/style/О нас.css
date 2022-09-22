@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+}
+@font-face {
+  font-family: Bukhari;
+  src: url(fonts/BukhariScript-Regular.otf);
+}
+@font-face {
+  font-family: Balqis;
+  src: url(fonts/Balqis.otf);
+}
+body {
+  background-image: url(image/фон\ город\ в\ облаках.jpg);
+  background-repeat: no-repeat;
+}
+header {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.tel img {
+  height: 30px;
+  position: relative;
+  right: 0;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.seach img {
+  margin-top: 0px;
+  height: 50px;
+}
+.seach {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+}
+.seach input {
+  line-height: 25px;
+  width: 250px;
+}
+.name {
+  height: 100px;
+  margin-top: 0px;
+  font-size: 20px;
+}
+
+.name a {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 190px;
+  position: absolute;
+  text-decoration: none;
+  /* color: #ffd700; */
+  color: rgb(56, 32, 32);
+  top: 30px;
+  font-family: Bukhari, Balqis;
+  font-size: 35px;
+  border: 2px solid rgb(56, 32, 32);
+}
+.basket img {
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.registration img {
+  height: 40px;
+  position: absolute;
+  right: 80px;
+  top: 10px;
+}
+.registration:hover .form {
+  display: block;
+}
+.form {
+  position: absolute;
+  right: 40px;
+  top: 50px;
+  height: 250px;
+  width: 300px;
+  background-color: grey;
+  z-index: 2;
+  display: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  position: relative;
+}
+form input {
+  width: 200px;
+  height: 20px;
+  margin-top: 5px;
+}
+form label {
+  margin-top: 10px;
+}
+form input[type="submit"] {
+  margin-top: 10px;
+  width: 80px;
+  height: 30px;
+  color: white;
+  background-color: rgb(56, 32, 32);
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+form a {
+  position: absolute;
+  top: 190px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  text-decoration: none;
+}
+form a:hover {
+  color: greenyellow;
+}
+form input:invalid {
+  border: 2px solid red;
+}
+nav {
+  background-color: rgba(128, 128, 128, 0.523);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+nav div {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+nav div a {
+  text-decoration: none;
+  color: black;
+  padding-top: 15px;
+  box-sizing: border-box;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -70%);
+}
+nav div:hover {
+  background-color: rgba(255, 255, 255, 0.512);
+}
+nav > div:hover .submenu {
+  display: block;
+}
+.menu_mobil {
+  display: none;
+}
+
+.menu_mobil a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+.menu_mobil img {
+  height: 20px;
+  width: 30px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  margin-bottom: 5px;
+}
+.menu_mobil span {
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  transform: translateX(-50%);
+}
+.submenu {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid;
+  width: 60vw;
+  height: 30vw;
+  background-color: grey;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-30%);
+  z-index: 2;
+  display: none;
+}
+.submenu a {
+  width: 100%;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 5px;
+}
+.submenu_1 {
+  display: flex;
+}
+.submenu_2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu:hover {
+  background-color: grey;
+}
