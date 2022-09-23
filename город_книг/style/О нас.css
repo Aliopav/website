@@ -144,15 +144,21 @@ nav div {
   position: relative;
 }
 nav div a {
+  align-items: center;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   color: black;
   padding-top: 15px;
   box-sizing: border-box;
   font-size: 20px;
+}
+nav div a span {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -70%);
+  text-align: center;
+  line-height: 60px;
 }
 nav div:hover {
   background-color: rgba(255, 255, 255, 0.512);
@@ -170,12 +176,14 @@ nav > div:hover .submenu {
   display: flex;
   flex-direction: column;
   font-size: 15px;
+  top: 0px;
+  position: relative;
 }
 .menu_mobil img {
   height: 20px;
   width: 30px;
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -100%);
   margin-bottom: 5px;
@@ -183,7 +191,7 @@ nav > div:hover .submenu {
 .menu_mobil span {
   position: absolute;
   left: 50%;
-  bottom: 5px;
+  top: 10px;
   transform: translateX(-50%);
 }
 .submenu {
@@ -200,12 +208,7 @@ nav > div:hover .submenu {
   z-index: 2;
   display: none;
 }
-.submenu a {
-  width: 100%;
-  font-size: 20px;
-  text-align: left;
-  margin-left: 5px;
-}
+
 .submenu_1 {
   display: flex;
 }
@@ -213,8 +216,62 @@ nav > div:hover .submenu {
   width: 50%;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.submenu_2 span {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
 }
 
 .submenu:hover {
   background-color: grey;
+}
+@media (max-width: 1200px) {
+  header {
+    height: 150px;
+    position: relative;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  .seach {
+    position: absolute;
+    right: 0;
+    top: 90px;
+  }
+  .name {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%);
+  }
+
+  .contact {
+    position: absolute;
+    left: 0;
+  }
+  .menu {
+    display: none;
+  }
+  .menu_mobil {
+    display: block;
+  }
+}
+@media (max-width: 650px) {
+  .name {
+    top: 0px;
+  }
+  .contact {
+    display: none;
+  }
+  nav {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+  .registration img {
+    right: 10px;
+    top: 55px;
+  }
 }
