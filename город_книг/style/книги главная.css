@@ -84,7 +84,7 @@ header {
   height: 250px;
   width: 300px;
   background-color: grey;
-  z-index: 2;
+  z-index: 3;
   display: none;
 }
 form {
@@ -128,7 +128,7 @@ form input:invalid {
   border: 2px solid red;
 }
 nav {
-  background-color: rgba(128, 128, 128, 0.523);
+  background-color: rgb(128, 128, 128);
   height: 60px;
   display: flex;
   align-items: center;
@@ -137,6 +137,9 @@ nav {
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 nav div {
   height: 100%;
