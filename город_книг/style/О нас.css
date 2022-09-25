@@ -227,6 +227,47 @@ nav > div:hover .submenu {
 .submenu:hover {
   background-color: grey;
 }
+footer {
+  height: 20%;
+  background-color: rgba(255, 255, 255, 0.475);
+}
+.footer_flex {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.footer_data {
+  width: 33%;
+  text-align: center;
+}
+.footer_catalog {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  text-align: center;
+}
+.footer_catalog a {
+  text-decoration: none;
+  color: black;
+}
+.footer_catalog a:hover {
+  /* background-color: rgba(128, 128, 128, 0.493); */
+
+  transform: scale(1.1);
+  font-weight: bold;
+  transition: 1s;
+  text-decoration: underline red;
+}
+.footer_contact {
+  width: 33%;
+  text-align: center;
+}
+.footer_payment img {
+  position: relative;
+  width: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 @media (max-width: 1200px) {
   header {
     height: 150px;
@@ -273,5 +314,13 @@ nav > div:hover .submenu {
   .registration img {
     right: 10px;
     top: 55px;
+  }
+  .footer_flex {
+    flex-direction: column;
+  }
+  .footer_data,
+  .footer_catalog,
+  .footer_contact {
+    width: 90%;
   }
 }
